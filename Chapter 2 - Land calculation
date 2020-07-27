@@ -1,0 +1,7 @@
+#Land calculation
+
+square_feet = float(input("Square feet: "))
+
+conversion = format((square_feet / 43.560), '.2f')
+
+print(square_feet, "square feet equal", conversion, "acres")
