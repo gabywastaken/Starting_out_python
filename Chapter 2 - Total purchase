@@ -1,0 +1,21 @@
+#Total Purchase
+
+#A customer in a store is purchasing 5 items. Write a
+#program that  asks for the price of each item, then
+#displays the subtotal of the sale, the amount of sales tax,
+#and the total.
+#assume the sales tax is 7%
+
+item1 = float(input(">"))
+item2 = float(input(">"))
+item3 = float(input(">"))
+item4 = float(input(">"))
+item5 = float(input(">"))
+
+subtotal = item1 + item2 + item3 + item4 + item5
+
+tax = (subtotal * 7) // 100
+
+total = subtotal - tax
+
+print("Subtotal {} \nTax {} \nTotal {}".format(subtotal,tax,total))
