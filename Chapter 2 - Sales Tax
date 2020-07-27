@@ -1,0 +1,16 @@
+#Sales Tax
+#Ask the user to enter the amount of a purchase. The program
+#should then compute the state and county sales tax. Assume the
+#state tax is 5% and the county sales tax is 2.5%. The program
+#should display the amount of the purchase, the state sales tax
+#the county sales tax, the total tax, the total of the sale
+#(which is the sum of the amount of purchase plus the total
+#sales tax)
+
+price_purchase = float(input("> "))
+state_tax = price_purchase * 0.05
+price_stax = price_purchase - state_tax
+county_tax = price_stax * 0.025
+price_ctax = price_stax - county_tax
+
+print("Amount purchased {} \nState tax {} \nCounty tax {} \nTotal {}".format(price_purchase, state_tax, county_tax, price_ctax))
