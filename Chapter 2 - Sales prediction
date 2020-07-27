@@ -1,0 +1,5 @@
+projection = float(input("Projected sales: "))
+
+anual_pro = (projection * 0.23)
+
+print("Your anual profit is going to be", anual_pro)
