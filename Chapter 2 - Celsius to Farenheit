@@ -1,0 +1,11 @@
+#Celsius to Fahrenheit Temperature Converter
+#Write a program that converts Celcius temperatures to Fahrenheit.
+#Formula: F=95C+32
+#The program should ask the user for a temperature in celsius and display the
+#results in Fahrenheit
+
+celsius = float(input("Celsius: > "))
+
+conversion_F = format(((celsius * 1.8) + 32),'.2f')
+
+print("Temperature in Fahrenheit: ", conversion_F)
