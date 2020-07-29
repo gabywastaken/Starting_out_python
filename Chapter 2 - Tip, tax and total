@@ -1,0 +1,16 @@
+#Tip Tax and Total
+#Write a program that calculates the total amount of a meal purchased at a
+#restaurant. The program should ask the user to enter the charge for the food,
+#then calculate the amounts of 18% tip, and 7% sales tax. Display each of these
+#amounts and the total.
+
+subtotal_price = float(input("Meal charge: "))
+
+tip = (subtotal_price * 18) / 100
+
+sales_tax = (subtotal_price * 7) / 100
+
+total = format(((subtotal_price + tip) + sales_tax),'.2f')
+
+print("Bill: \nsubtotal= {}\nTip= {}\nSales tax= {}\nTotal= {}".format(subtotal_price, tip, sales_tax, total))
+
