@@ -1,0 +1,13 @@
+#Miles per gallon
+#A car's miles-per-ga+llon (MPG) can be calculated with the following formula:
+#MPG= miles_driven/Gallons_of_gas_usd
+#write a program that asks the user for the number of miles driven and
+#the gallons of gas used. I should calculate the car's MPG and display the result
+
+miles = float(input("Miles driven: "))
+gallons = float(input("Gallons used: "))
+
+MPG = float(miles / gallons)
+
+print("Miles per gallon result: ",format(MPG,'.2f'))
+
