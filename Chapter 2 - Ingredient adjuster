@@ -1,0 +1,20 @@
+#Ingredient adjuster:
+#1.5 cups of sugar
+#1 cup of butter
+#2.75 cups of flour
+
+#The recipe produces 48 cookies with this amount of ingredients. Write a program
+#that asks the user how many cookies he or  she wants to make, then displays
+#the number of cookies.
+
+cookies_quant = float(input("How many cookies?: "))
+
+#sugar per cookie = 0.03
+#butter per cookie = 0.02
+#flour per cookie = 0.05
+
+sugar_needed = format((cookies_quant * 0.03),'.2f')
+butter_needed = format((cookies_quant * 0.02),'.2f')
+flour_needed = format((cookies_quant * 0.05),'.2f')
+
+print("For ", cookies_quant, " cookies, you'll need:\n{} cups of sugar\n{} cups
