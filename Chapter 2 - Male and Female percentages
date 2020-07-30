@@ -1,0 +1,14 @@
+#Male and Female percentages
+#Write a program that asks the user for the number of males and the number of
+#females registered in a class. The program should display the percentages of
+#males and females in the class.
+
+males = int(input("Males: "))
+females = int(input("Females: "))
+
+total = males + females
+
+per_mal = format(((males / total) * 100),'.2f')
+per_fem = format(((females / total) * 100),'.2f')
+
+print("Males %: {}\nFemales %: {}".format(per_mal, per_fem))
