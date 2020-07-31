@@ -1,0 +1,46 @@
+#Stock transaction program
+#Last month, Joe purchased some stock in Acme Software, Inc.
+#Details of the purchase:
+#-The number of shares that joe purchased was 2000.
+#-When Joe purchased the stock, he paid $40000 per share
+#-Joe paid his stockbroker a commission that amounted to 3% of the amount he paid
+#for the stock.
+
+#Two weeks later, Joe sold the stock. Here are the details of the sale:
+#-The number of shares that Joe sold was 2000
+#-He sold the stock for $42.75 per share
+#-He paid his stockbroker another commission that amounted to 3 percent of
+#of the amount he recieved for the stock
+
+#Write a program that displays the following information:
+#-The amount of money Joe paid for the stock
+#-The amount of commission Joe paid the broker  when he bought the stock
+#-The amount for which Jose sold the stock
+#-The amount of commission Joe paid his broker when he sold the stock
+#Display the amount of money that Joe had left when he sold the stock
+#and paid his broker (both times). If this amount if positive, Then
+#Joe made a profit, If negative, then Joe lost money.
+
+total_price_stock1 = 2000 * 40000
+
+comm1_perc = (total_price_stock1 * 3)/100
+
+total1 = total_price_stock1 - comm1_perc
+
+#Two weeks later
+
+total_price_stock2 = 2000 * 42.75
+
+comm2_perc = (total_price_stock2 * 3)/100
+
+total2 = total_price_stock2 - comm2_perc
+
+left = total2 - total1
+
+print("The amount paid for the stock: ",total_price_stock1)
+print("The comission for the broker: ",comm1_perc)
+print("Stock selling price: ",total_price_stock2)
+print("Selling commission for the broker: ",comm2_perc)
+print("Total buying price: ",total1)
+print("Total selling price: ",total2)
+print("Joe has lost money: ",left)
