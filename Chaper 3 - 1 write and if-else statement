@@ -1,0 +1,13 @@
+#Write an if-else statement that asssigns 0 to the variable b if the variable
+#a is less than 10.
+#Otherwise, it should assing 99 to the variable b.
+
+import random
+a = random.randint(0, 20)
+
+if a < 10:
+    b = 0
+    print(b)
+else:
+    b = 99
+    print(99)
