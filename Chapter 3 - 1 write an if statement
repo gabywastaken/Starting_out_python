@@ -1,0 +1,14 @@
+#write an if statement that assigns 20 to the variable y, and assigns 40 to the
+#variable z if the variable x is greater that 100
+import random
+num = [20,40]
+
+x = random.choice(num)
+
+
+if x == 20:
+    y = x
+    print(y)
+elif x == 40:
+    z = x
+    print(z)
