@@ -1,0 +1,20 @@
+#Age classifier
+#Write a program that asks the user to enter a person's age. The program should
+#display a message indicating whether the person is an infant, a child,
+#a teenager, or an adult. Following the guidelines:
+
+#if the person in 1 yo or less, its an infant
+#if the person is older than 1y, but younger than 13y, its a child
+#if the person is at least 13y, but less than 20yo, its a teenager
+#if the person is at least 20yo, its an adult
+
+age = int(input("Age: "))
+
+if age < 1:
+    print("Infant")
+elif age >= 1 and age <13:
+    print("Child")
+elif age >=13 and age < 20:
+    print("Teenager")
+else:
+    print("Adult")
