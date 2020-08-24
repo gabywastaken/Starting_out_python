@@ -1,0 +1,21 @@
+#The following code contains several nestedif-else statements. Unfortunately,
+#it was written without proper alignment and indentation. Rewrite the code and
+#use the proper conventions of aligment and indentation.
+
+import random
+
+
+if score >= A_score:
+    print("Your grade is A.")
+
+elif score >= B_score:
+    print("Your grade is B.")
+
+elif score >= C_score:
+    print("Your grade is C.")
+
+elif score >= D_score:
+    print("Your grade is D.")
+
+else:
+    print("Your grade is F.")
