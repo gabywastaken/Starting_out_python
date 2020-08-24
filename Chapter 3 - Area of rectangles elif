@@ -1,0 +1,20 @@
+#Area of rectangles
+#The area of a rectngle is the rectangle's lenght times its width. Write a prog-
+#gram that asks for the length and width of two rectangles. The program should
+#tell the user which rectangle has the greater area, or if the areas are the same
+
+
+
+len_rec1 = int(input("Lenght 1: "))
+wid_rec1 = int(input("Width 1: "))
+
+len_rec2 = int(input("Lenght 2: "))
+wid_rec2 = int(input("Width 2: "))
+
+rec_area1 = len_rec1 * wid_rec1
+rec_area2 = len_rec2 * wid_rec2
+
+if rec_area1 > rec_area2:
+    print("The area of rectangle #1 is larger than rectangle #2")
+else:
+    print("The area of rectangle #2 is larger than rectangle #1")
