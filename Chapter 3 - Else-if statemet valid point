@@ -1,0 +1,9 @@
+#Write an if-else statement that that determines whether the points variable is
+#is outside the range of 9 to 51. If the variable's value is outside this range
+#it should display "invalid points". Otherwise, it should display "valid points"
+
+points = int(input("> "))
+if points >= 9 and points <= 51:
+    print("Valid Points")
+else:
+    print("Invalid points")
