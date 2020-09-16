@@ -1,0 +1,33 @@
+#Roman numerals
+#Write a program that prompts the user to enter a number within the range of 1
+#through 10. The program should display the roman numeral version of that number
+#If the number is outside the range of 1 through 10, the program should display
+#an error message. The following table shows the Roman numerals for the number 1
+#through 10:
+
+num_inp = int(input("Number please: "))
+
+if num_inp == 1:
+    print("I")
+
+elif num_inp == 2:
+    print("II")
+elif num_inp == 3:
+    print("III")
+elif num_inp == 4:
+    print("IV")
+elif num_inp == 5:
+    print("V")
+elif num_inp == 6:
+    print("VI")
+elif num_inp == 7:
+    print("VII")
+elif num_inp == 8:
+    print("VIII")
+elif num_inp == 9:
+    print("IX")
+elif num_inp == 10:
+    print("X")
+else:
+    print("Incorrect number")
+
