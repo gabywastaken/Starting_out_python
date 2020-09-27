@@ -1,0 +1,40 @@
+import math
+
+#Hot dog calculator
+#Assume hot dogs come in packages of 10, and hot dog buns come in packages of 8.
+#Write a program that calculates the number of packages of hot dogs and the
+#number of buns needed for a coockout, with the minimum amount of leftovers.
+#The program should ask the user for the number of people attending the cookout
+#and the number of hotdogs each person will be given. The program should display
+#the following details:
+
+#The minimum number of packages of hot dogs required
+#the minimum number of packages of hot dog buns required
+#The number of hot dogs that will be left over
+#The number of hot dog buns that will be left over
+
+#Info required from the user
+atendees = int(input("How many atendees?: "))
+hot_dogs_pp = int(input("How many hot dogs for each atendee?: "))
+
+#Info of the materials
+hot_dogs_quantity = 10
+buns = 8
+
+#quantity of hot dogs required to make for all the attendees
+hotdogsneeded = atendees * hot_dogs_pp
+hotdogsbunsneeded = hotdogsneeded
+
+#number of packages we need to feed all the atendees
+packagesofhotdogsneeded =(hotdogsneeded / hot_dogs_quantity)
+packofbunsneeded =(hotdogsbunsneeded / buns)
+
+
+packagesofhotdogsneeded_ceil = (math.ceil(hotdogsneeded / hot_dogs_quantity))
+packofbunsneeded_ceil = (math.ceil(hotdogsbunsneeded / buns))
+
+hotdog_leftover = (hot_dogs_quantity * packagesofhotdogsneeded_ceil) - (atendees * hot_dogs_pp)
+buns_leftovers = (buns * packagesofhotdogsneeded_ceil) - (atendees * hot_dogs_pp)
+
+print("""For the party, youll need: \nHotdog packages: {} \nBuns packages: {} \nHot dogs Left: {} \nBuns left: {}""".format(packagesofhotdogsneeded_ceil, packofbunsneeded, hotdog_leftover, buns_leftovers))
+
