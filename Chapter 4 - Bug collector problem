@@ -1,0 +1,15 @@
+#A bug collector collects bugs every day for fice days.
+#Write a program that keeps a running total of the number of bugs collected the five
+#days.
+
+#The loop should ask for thenumber of bugs  collected for each day, and when the loop
+#is finished, the program should display the total number of bugs collected.
+
+print("bug collector super program")
+
+bug_quant = int(input("Bugs today: "))
+
+for bug in range(4):
+    bug_quant += int(input("Bugs today: "))
+
+print("The total amount of bugs collected: ", bug_quant)
