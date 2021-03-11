@@ -1,0 +1,10 @@
+ask = 0
+product=0
+while ask != "n":
+    num = int(input(">Número 1: "))
+    num2 = int(input(">Número 2: "))
+    product = num + num2
+    print(product)
+    ask = input("Do you wish to do that again? (y/n) ")
+
+   
