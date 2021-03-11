@@ -1,0 +1,5 @@
+num = 0
+for i in range(129,302):
+    num += i
+    
+print(num)
