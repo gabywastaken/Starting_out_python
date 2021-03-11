@@ -1,0 +1,6 @@
+for row in range(15):
+    for col in range(15):
+        print("#", end="")
+    print()
+
+
