@@ -1,0 +1,11 @@
+#Calories burned
+
+#Running on a particular treadmill you burn 4.2 cal per min. Write a program
+#that uses a loop to display the number of calories burned after 10, 15, 20, 25
+#and 30 min.
+
+
+count = 0
+for i in [10,15,20,25,30]:
+    num= 4.2*i
+    print(num)
