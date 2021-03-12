@@ -1,0 +1,24 @@
+#Budget Analysis
+
+#Write a program that asks the user to enter the amount that he has  budgeted for
+#a month. A loop should then prompt the user to enter each of his expenses for the
+#month and keep a running total. When the loop finishes, the program should dis
+#play the amount that the user is over or under the budget
+
+budget = int(input("Budget: "))
+amount = 0
+control = 1
+
+while control == True:
+    amount += int(input("Expense: "))
+    ask = input("Another one? ")
+    if ask == "n":
+        break
+
+if amount <= budget:
+    print("Congrats, the buget is ", amount)
+
+else:
+    print("Oh no, too expensive ", amount)
+
+
