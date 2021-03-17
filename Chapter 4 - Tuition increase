@@ -1,0 +1,15 @@
+#Tuition increase
+
+#At one college, the tuition for a full-time student is $8000 per semester. It has
+#been announced that the tuition will increase by 3% each year for the next 5 years.
+#write a program that displays the projected semester tuition amount for the
+#next 5 years.
+
+
+tuition = 8000
+print(tuition)
+percentage = (tuition * 3)/100
+
+for tuit in range(4):
+    tuition += percentage
+    print(tuition)
