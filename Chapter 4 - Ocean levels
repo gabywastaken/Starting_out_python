@@ -1,0 +1,18 @@
+#Ocean levels
+
+#Assuming the ocean's level is currently rising at about 1.6 millimeters per year
+#create an application that displays the number of millimeters that the ocean
+#will have risen each year for the next 25 years.
+sea_level = 1.6
+sum_level = 0
+count = 0
+sea_level1 = 0
+
+for ml in range(25):
+    count += 1
+    sea_level1 += sea_level
+    print(count, sea_level1)
+
+
+    
+    
