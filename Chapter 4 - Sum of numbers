@@ -1,0 +1,15 @@
+#Sum of numbers
+
+#Write a program with a loop that asks the user to enter a series of positive
+#numbers.
+#The user should enter a negative number to signal the end of the series. After
+#all the numbers have been entered, the program should display the sum.
+
+num = int(input("Enter a number: "))
+count = 0
+
+while num >= 1:
+    count += num
+    num = int(input("Enter a number again: "))
+
+print(count)
