@@ -1,0 +1,16 @@
+#Weight loss
+
+#If a moderately active person cuts their calorie intake by 500 calories a day,
+#they can typically lose about 4 pounds a month.
+#Write a program that lets the user enter their starting weight, then creates
+#and displays a table showing what their expected weights will be at the end
+#of each moth for the next months if they stay on this diet
+
+weight = int(input("Enter your weight: "))
+loss = 4
+count = 0
+
+for n in range(6):
+    count += 1
+    weight -= loss
+    print(count, "---", weight)
