@@ -1,0 +1,23 @@
+##Calculating the factorial of a Number
+
+#In mathematics, the notation n! represents the factorial of the nonnegativ
+#int n. The factorial of n is the product of all the nonnegative integers from 1
+#to n.
+
+##Write a program that lets the user enter a nonnegative integer then uses a loop
+#to calculate the  factorial of that number. Display the factorial
+
+num = int(input("> "))
+count = 0
+list1 = []
+suma = 0
+
+for n in range(num):
+    count += 1
+    suma += count
+    list1.append(count)
+    list1.append("X")
+
+del list1[-1]
+
+print(num,"!=", *list1,"=",suma)
