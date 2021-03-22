@@ -1,0 +1,24 @@
+##Population
+
+#Write a program that predicts the approx sixe of a population of organisms
+#The application should use text boxes to allow the user to enter the starting
+#number of organisms, the average daily population increase (%), and the number
+#of days the organism will be left to multiply
+
+start = int(input("Starting num of organisms: "))
+avr = int(input("Average increase: "))
+days = int(input("Number of days: "))
+times = days-1
+start1 = start
+print(start)
+
+count = 0
+
+for n in range(times):
+    count += 1
+    perc = start1 * (avr/100)
+    start1 += perc
+    print(count , format(start1,".1f"))
+
+
+    
