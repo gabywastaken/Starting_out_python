@@ -1,0 +1,9 @@
+#Write a function named times_ten. The function should accept an argument and 
+#display the product of its argument multipplied times 10
+
+
+
+def times_ten():
+	x = int(input("> "))
+	prodct = x * 10
+	return prodct
