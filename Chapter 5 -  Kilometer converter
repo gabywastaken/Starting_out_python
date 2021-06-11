@@ -1,0 +1,17 @@
+#Kilometer Converter
+
+#The kilometer converter problem.
+#Write a program that asks the user to enter a distance in kilometers, then
+#convers that distance to miles, the conversion formula is as follows:
+
+#Miles = Kilometers x 0.6214
+
+def main():
+    km = float(input("> "))
+    conversion(km)
+
+def conversion(km):
+    miles = km * 0.62
+    print(miles)
+
+main()
