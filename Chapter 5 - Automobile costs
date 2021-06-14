@@ -1,0 +1,39 @@
+#Automobile costs
+
+#Write a program that asks the user to enter the monthly costs for the
+#following expenses incurred from operating his or her automobile: loan
+#payment, insurance, gas, oil, tires, and maintenance. The program should
+#then display the total monthly cost of these expenses, and the total annual
+#cost of these expenses
+
+def main():
+    print("Montly cost")
+
+    
+
+    data_recol()
+
+def data_recol():
+    count = 0
+    total1 = 0
+    for x in range(12):
+        count += 1
+        print("\nData for month # ", count, "\n")
+        
+        gasto1 = int(input("gasto 1: "))
+        gasto2 = int(input("gasto 2: "))
+        #loan = int(input("Loan payment: "))
+        #insur = int(input("Insurance payment: "))
+        #g_o_l = int(input("Gas, oil, tires payment: "))
+        #maint = int(input("Maintenance payment: "))
+        #total = loan + insur + g_o_l + maint
+        total = gasto1 + gasto2
+        print(total, "  mes ", count)
+       
+        total1 += total
+
+    print("Gastos totales anuales ", total1)
+
+
+        
+main()
