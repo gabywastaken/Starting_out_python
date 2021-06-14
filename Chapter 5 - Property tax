@@ -1,0 +1,35 @@
+##Property tax
+##
+##A county collects property taxes on the asssessment value of property, which
+##is 60 percent of the property's actual value. For example, if an acre of land
+##is valued at $10,000, its assessment value is $6,000.
+##The property tax is then 72cents for each 100 of the assessment value. The
+##tax for the acre assessed at $6,000 will be $43.20.
+##
+##Write a program that asks for the actual value of a piece of property and
+##displays the assessment value and property tax.
+
+def main():
+    print("Welcome to property task")
+
+    cond = "y"
+
+    while cond == "y":
+        global value
+        value = int(input("Please write the actual value of the property: "))
+
+        tax()
+        assess_val()
+
+        cond = str(input("would you like to calculate again? (y/n)")) 
+
+def tax():
+    tax = ((value * 0.72)/100)
+    print(tax)
+    
+
+def assess_val():
+    assess_val = ((value * 60) / 100)
+    print(assess_val)
+
+main()
