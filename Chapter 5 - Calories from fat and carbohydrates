@@ -1,0 +1,44 @@
+##Calories from fat and carbohydrates
+##
+##A nutritionist who works for a fitness club helps members evaluating their diets.
+##As part of her evaluation, she asks memebers for the number of fat grams and
+##carbohydrates that they consumed in a day.
+##Then, she calculates the number of calories that result from the fat, using the
+##following formula:
+##
+##calories_from_fat = fat_grams * 9
+##
+##Next she calculates the number of caloris that result from the carbohydrates,
+##using the following formula:
+##
+##calories_from_carbs = carb_grams * 4
+##
+##The nutritionist asks you to write a program that will make these calculations.
+
+
+
+
+def main():
+
+    print("Calories calculator")
+
+    fat_gr = int(input("Fats in grams: "))
+    carb_gr = int(input("Carbs in grams: "))
+    
+    fat_cal_to_gr( fat_gr )
+    cabrs_cal_to_gr( carb_gr )
+
+    
+
+def fat_cal_to_gr( fat_gr ):
+    #Calories from fat
+    cal_fat = fat_gr * 9
+    print(cal_fat)
+
+def cabrs_cal_to_gr( carb_gr ):
+    #Calories form carbs
+    cal_carb = carb_gr * 4
+    print(cal_carb)
+
+
+main()
