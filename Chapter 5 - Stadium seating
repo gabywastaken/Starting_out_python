@@ -1,0 +1,48 @@
+##Stadium Seating
+##
+##There are three seating categories at a stadium. Class A seats cost $20, Class B
+##seats cost $15, and Class C seats cot $10
+##Write a rpogram that asks how many tickets for each class of seats were sold,
+##then displays the amount of income generated from ticket sales.
+
+def  main():
+    print("welcome to seat income caluclator of Stadium Stadium")
+    ASeatingsBougth = int(input("How many A seats were sold?"))
+    BSeatingsBougth = int(input("How many B seats were sold?"))
+    CSeatingsBougth = int(input("How many C seats were sold?"))
+    print("lemao")
+
+    salesA = calculate_A_seatings( ASeatingsBougth )
+    salesB = calculate_B_seatings( BSeatingsBougth )
+    salesC = calculate_C_seatings( CSeatingsBougth )
+    sum_total_sales = calculate_total_sales( salesA, salesB, salesC )
+    sales_output( salesA, salesB, salesC, sum_total_sales )
+
+
+
+def calculate_A_seatings( ASeatingsBougth ):
+    a_income = ASeatingsBougth * 20
+    return a_income
+
+def calculate_B_seatings( BSeatingsBougth ):
+    b_income = BSeatingsBougth * 15
+    return b_income
+
+def calculate_C_seatings( CSeatingsBougth ):
+    c_income = CSeatingsBougth * 10
+    return c_income
+
+def calculate_total_sales( salesA, salesB, salesC ):
+    total_sales = salesA + salesB + salesC
+    return total_sales
+
+def sales_output( salesA, salesB, salesC, sum_total_sales ):
+    print("Class A sales: $" , salesA, "\n",
+          "Class B sales: $" , salesB, "\n",
+          "Class C sales: $" , salesC, "\n",
+          "Total seat sales: $" , sum_total_sales)
+
+main()
+
+
+
