@@ -1,0 +1,64 @@
+##Paint job estimator
+##
+##A painting company has determined that for every 112 square feet of wall space,
+##one gallon of paint and eight hours of labor will be  required. The company
+##charges $35 per hour for labor.
+##Write a program that asks the user to enter the square feet of wall space to be
+##painted and the price of the paint per gallon. The program should display the
+##following data:
+##    The number of gallons of paint requiered
+##    The hours of labor required
+##    The cost of the paint
+##    The labor charges
+##    The total cost of the paint job
+
+
+def main():
+    wall_space = 112
+    hour = 35
+    time_per_gallon = 8
+
+    
+    print("Paint job estimator")
+    sqr_feet_wall = int(input("Insert square feet of wall space requiered: "))
+    price_paint_per_gallon = int(input("Insert price of paint per gallon: "))
+
+    total_gallons = num_gallons_required(wall_space, sqr_feet_wall)
+    hours_required = hours_labors_required(time_per_gallon, wall_space, sqr_feet_wall)
+    price_paint = cost_of_paint(price_paint_per_gallon, sqr_feet_wall)
+    labor = labor_charges(hours_required, hour)
+    total_total = total_cost_all_job(labor,price_paint)
+    user_output(total_gallons, hours_required, price_paint, labor, total_total)
+
+
+def num_gallons_required(wall_space, sqr_feet_wall):
+    total_required_gallons = int((1 / wall_space) * sqr_feet_wall)
+    return total_required_gallons
+
+def hours_labors_required(time_per_gallon, wall_space, sqr_feet_wall):
+    time_given_gallons = int((time_per_gallon / wall_space) * sqr_feet_wall)
+    return time_given_gallons
+
+def cost_of_paint(price_paint_per_gallon, sqr_feet_wall):
+    cost_paint = price_paint_per_gallon * sqr_feet_wall
+    return cost_paint
+
+def labor_charges(hours_required, hour):
+    labor_per_hour = hours_required * hour
+    return labor_per_hour
+
+def total_cost_all_job(labor,price_paint):
+    all_costs_sum = labor + price_paint
+    return all_costs_sum
+
+def user_output(total_gallons, hours_required, price_paint, labor, total_total):
+    print("Report of costs for the job \n",
+          "Number of gallons of paint requiered: ", total_gallons, "gallons \n",
+          "Hours of labor required: ", hours_required, "H \n",
+          "cost of the paint: $", price_paint, "\n",
+          "Labor charges: $", labor, "\n",
+          "Total cost of the paint job: $", total_total)
+          
+    
+
+main()
