@@ -1,0 +1,23 @@
+##The feet to inches problem
+##
+##One foot equals 12 inches. Write a function named feet_to_inches that accepts
+##a number of feet as an argument and returns the number of inches in that many
+##get. Use the function in a program that prompts the user to enter a number of
+##feet then displays the number of inches in that many feet
+##
+
+def main():
+    print("Feet to inches converter")
+    user_feet = float(input("Enter feet here to convert: "))
+    inches_result = (feet_to_inches(user_feet))
+    final_result(user_feet, inches_result)
+    
+
+def feet_to_inches(user_feet):
+    inches_con = user_feet * 12
+    return inches_con
+
+def final_result(user_feet, inches_result):
+    print(user_feet, " feet in inches is: ", inches_result)
+
+main()
