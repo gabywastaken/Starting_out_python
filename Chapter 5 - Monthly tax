@@ -1,0 +1,35 @@
+##monthly tax
+##
+##A retail company must file a monthly sales tax report listing the total sales
+##tax collected. The state sales tax rate is 5 percent and the county sales tax
+##2.5 percent. Write a program thaat asks the user to enter the total sales for
+##the month. From his figure, the application should calculate and display the
+##following:
+##    The amount of county sales tax
+##    The amount of state sales tax
+##    The total sale tax
+
+def main():
+    total_sales_month = int(input("Enter total monthly sales: "))
+
+    county_pt = county_tax(total_sales_month)
+    state_pt = state_tax(total_sales_month)
+    total = total_tax(county_pt, state_pt)
+
+    print("County sales tax: $", county_pt,
+          "\nState sales tax: $", state_pt,
+          "\nTotal sale tax: $", total)
+
+def county_tax(total_sales_month):
+    county_percent = (total_sales_month * 2.5)/100
+    return county_percent
+
+def state_tax(total_sales_month):
+    state_percent = (total_sales_month * 5)/100
+    return state_percent
+
+def total_tax(county_pt, state_pt):
+    sum_sales_tax = (county_pt + state_pt)
+    return sum_sales_tax
+
+main()
