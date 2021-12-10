@@ -1,0 +1,40 @@
+##Compound interest
+##
+##When a bank account pays compound interest, it pays interest not only on the
+##principal amount that was deposited into the account, but also on the interest
+##that has accumulated over time. Suppose you want to deposit some money into a
+##savings account, and let the account earn compound interest for a certain
+##number of years. The formula for calculating the balance of the account after
+##specified number of years is:
+##
+##A=P(1+rn)nt
+##
+##the terms are:
+##    A is the amount of money in the account after the specified number of years
+##    P is the principal amount that was originally deposited into the account
+##    r is the annual interest rate
+##    n is the number of times per year that the interest is compounded
+##    t is the specified number of yeas
+##
+##Write a program that makes yhe calculation for you. The program should ask the
+##user to input the following:
+##    The amount of principal originally deposited into the account
+##    The annual interest rate paid by the account
+##    The number of times per yeat that the interest is compounded (for example,
+##    if interest is compounded monthly, enter 12)
+##    The number of yeats the account will be left to earn interest
+##
+##Once the input data has been entered, the program should calculate and display
+##the amount of money that will be in the account after the specified number of
+##years.
+##
+
+amount_principal = int(input("Principal amount: "))
+anual_interest = int(input("Annual interest: "))
+compounded_int = int(input("Months for compound interest: "))
+years_account = int(input("Years the account will be left to earn interest: "))
+
+amount_ater_years = (amount_principal * (1 + anual_interest * compounded_int) * compounded_int * years_account)
+
+print("After ", years_account, " years, you'll have", amount_ater_years)
+
