@@ -1,0 +1,137 @@
+// lab3.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
+//
+
+//#include <iostream>
+//
+//int main()
+//{
+//	int n;
+//std::cout << "Number of asterisks" << std::endl;
+//std::cin >> n;
+//
+//for (int i = n; i < n; i++) {
+//
+//std::cout << "*";
+//
+//}
+//// std::cout << endl;
+//std::cout << n;ds
+// return 0;
+//}
+
+
+////------- Piramide------
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//
+//    int rows;
+//
+//    cout << "Rows ";
+//    cin >> rows;
+//
+//
+//    for (int i = n; i < n; i++) {
+//    
+//    std::cout << "*";
+//    
+//    }
+//
+// //   for (int i = 1; i <= rows; ++i) {
+// //       for (int j = 1; j <= i; ++j) {
+// //           cout << "* ";
+//        //}
+//        cout << "\n";
+//   
+//    return 0;
+//}
+//
+// line of asterisks
+//
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//	int n;
+//	cout << "number of asterisks: ";
+//	cin >> n;
+//
+//	for (int i = 0; i < n; i++) {
+//		cout << "*";
+//	}
+//
+//	cout << endl;
+//	return 0;
+//}
+//
+////-----------------------------
+//#include <iostream>
+//using namespace std;
+//
+//int main() {
+//	int n;
+//	cout << "number of asterisks: ";
+//	cin >> n;
+//
+//	for (int i = 0; i < n; i++) { 
+//		if (i % 2 == 0) {
+//			cout << "*";
+//		}
+//		else {
+//			cout << ".";
+//		}
+//		
+//	}
+//
+//	cout << endl;
+//	return 0;
+//}
+
+//-----------------------------
+//
+//Write a piece of the C++ code that prints(to the standard output) a rectangle with R rows and C columns composed of horizontal black and
+//white lines like in the example below.
+//
+//Example for R == 5, C == 8:
+//
+//XXXXXXXX
+//........
+//XXXXXXXX
+//........
+//XXXXXXXX
+
+//------- Piramide------
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int rows;
+
+    cout << "Rows ";
+    cin >> rows;
+
+
+    for (int i = n; i < n; i++) {
+    
+    std::cout << "*";
+    
+    }
+
+    for (int i = 1; i <= rows; ) {
+        for (int j = 1; j <= i; ) {
+            cout << "* ";
+            if (i % 2 == 0) {
+               		cout << "*";
+               		}
+            else {
+           			cout << ".";
+              		}
+        }
+        cout << "\n";
+   
+    return 0;
+}
+
+
